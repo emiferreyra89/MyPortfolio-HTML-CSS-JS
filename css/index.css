@@ -1,0 +1,87 @@
+.section__hobbies-targets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section__hobbies-targets div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  margin: 10px 20px;
+}
+
+.section__hobbies-targets div i {
+  font-size: 30px;
+}
+
+.section__aboutMe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section__education-targets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section__education-targets div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  margin: 10px 20px;
+}
+
+.section__contact div {
+  display: flex;
+}
+
+.section__contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.section__contact input, textarea {
+  padding: 10px;
+}
+
+.section__contact input {
+  border-radius: 8px;
+  height: 30px;
+}
+
+.section__contact textarea {
+  border-radius: 8px;
+  height: 100px;
+}
+
+.section__contact form button {
+  width: 50px;
+  height: 20px;
+  border-radius: 3px;
+  align-self: end;
+}
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1440px) {
+}

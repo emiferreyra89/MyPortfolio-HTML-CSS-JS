@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/02b2ba4a5f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
@@ -13,7 +15,9 @@
 
 <body>
   <header>
-    <h1>Welcome to Emi's Portfolio, Web Developer</h1>
+    <div class="header__title">
+      <h1>Welcome to my technological space</h1>
+    </div>
     <nav>
       <ul>
         <li><a href="hardSkills.html"><span>Hard Skills</span></a></li>
@@ -22,50 +26,85 @@
       </ul>
     </nav>
   </header>
-
+  <img src="../images/portfolio-background_header.jpg" alt="" style="width: 100%; height: 100px;">
   <main>
-    <section style="border: 2px solid black; display: flex;">
+    <section class="section__hobbies" style="border: 2px solid black">
       <h2>Hobbies</h2>
-      <div style="border: 1px solid red; width: 100px; height: 100px;"></div>
-      <div style="border: 1px solid red; width: 100px; height: 100px;"></div>
-      <div style="border: 1px solid red; width: 100px; height: 100px;"></div>
-      <div style="border: 1px solid red; width: 100px; height: 100px;"></div>
-      <div style="border: 1px solid red; width: 100px; height: 100px;"></div>
-      <div style="border: 1px solid red; width: 100px; height: 100px;"></div>
+      <div class="section__hobbies-targets">
+        <div>
+          <i class="fa-solid fa-futbol"></i>
+          <span>Futbol</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-person-swimming"></i>
+          <span>Nadar</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-kitchen-set"></i>
+          <span>Cocinar</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-book"></i>
+          <span>Leer</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-music"></i>
+          <span>Musica</span>
+        </div>
+        <div>
+          <i class="fa-solid fa-plane"></i>
+          <span>Viajes</span>
+        </div>
+      </div>
     </section>
-    <section style="border: 2px solid black; display: flex;">
+    <section class="section__aboutMe" style="border: 2px solid black">
       <h2>Sobre Mi...</h2>
+      <figure style="width: 50px;height: 50px;">
+        <img style="width: 100%;height: 100%;" src="../images/imgCV.png" alt="">
+      </figure>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum exercitationem atque eius necessitatibus
         quibusdam commodi unde ipsum obcaecati laborum molestiae veritatis corrupti delectus, architecto non ut odit.
         Facere, suscipit ex.</p>
     </section>
-    <section style="border: 2px solid black; display: flex;">
+    <section class="section__education" style="border: 2px solid black">
       <h2>Formacion Academica</h2>
-      <div style="border: 1px solid red; width: 100px; height: 100px;"></div>
-      <div style="border: 1px solid red; width: 100px; height: 100px;"></div>
-      <div style="border: 1px solid red; width: 100px; height: 100px;"></div>
+      <div class="section__education-targets">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </section>
-    <section style="border: 2px solid black; display: flex;">
+    <section class="section__contact" style="border: 2px solid black">
       <h2>Contacto</h2>
-      <figure style="border: 1px solid red; width: 100px; height: 100px;"><img src="" alt="Imagen de un telefono">
-      </figure>
-      <form action="" style="border: 1px solid red; width: 200px; height: 100px;">
-        <label><input type="text"></label>
-        <label><input type="text"></label>
-        <label><input type="text"></label>
-        <label><input type="text"></label>
-        <button type="submit"></button>
-      </form>
+      <div>
+        <figure style="border: 1px solid red; width: 100px; height: 100px; display: none;">
+          <img src="../images/portfolio-mail.jpg" alt="Imagen de un telefono" style="width: 100%;height: 100%;">
+        </figure>
+        <form action="" style="border: 1px solid red;">
+          <label></label>
+          <input type="text" placeholder="Nombre">
+          <label></label>
+          <input type="text" placeholder="Apellido">
+          <label></label>
+          <input type="text" placeholder="Asunto">
+          <label></label>
+          <textarea type="text" placeholder="Mensaje"></textarea>
+          <button type="submit"></button>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer>
-    <h4>Desarrollado por EMILIANO G. FERREYRA</h4>
+    <h5>Desarrollador</h5>
+    <h4>Emiliano G. Ferreyra</h4>
     <ul>
-      <li><a href=""><i></i></a></li>
-      <li><a href=""><i></i></a></li>
-      <li><a href=""><i></i></a></li>
-      <li><a href=""><i></i></a></li>
+      <li>
+        <a href="https://github.com/emiferreyra89"><i class="fa-brands fa-github"></i>GitHub</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/eg-ferreyra89/"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+      </li>
     </ul>
   </footer>
 </body>
