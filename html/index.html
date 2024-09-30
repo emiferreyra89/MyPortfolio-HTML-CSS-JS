@@ -4,6 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/02b2ba4a5f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/style.css">
@@ -15,20 +21,21 @@
 
 <body>
   <header>
-    <div class="header__title">
-      <h1>Welcome to my technological space</h1>
-    </div>
     <nav>
       <ul>
         <li><a href="hardSkills.html"><span>Hard Skills</span></a></li>
         <li><a href="softSkills.html"><span>Soft Skills</span></a></li>
-        <li><a href="proyects.html"><span>Proyects</span></a></li>
+        <li><a href="projects.html"><span>Projects</span></a></li>
       </ul>
     </nav>
+    <div class="header__title">
+      <h1>Bienvenidos a mi espacio tecnologico...</h1>
+    </div>
   </header>
-  <img src="../images/portfolio-background_header.jpg" alt="" style="width: 100%; height: 100px;">
   <main>
-    <section class="section__hobbies" style="border: 2px solid black">
+    <img src="../images/portfolio-background_header.jpg" alt="Banner red de triangulos y puntos interconectados"
+      class="main__banner">
+    <section class="section__hobbies">
       <h2>Hobbies</h2>
       <div class="section__hobbies-targets">
         <div>
@@ -57,39 +64,71 @@
         </div>
       </div>
     </section>
-    <section class="section__aboutMe" style="border: 2px solid black">
+    <section class="section__aboutMe">
       <h2>Sobre Mi...</h2>
-      <figure style="width: 50px;height: 50px;">
-        <img style="width: 100%;height: 100%;" src="../images/imgCV.png" alt="">
-      </figure>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum exercitationem atque eius necessitatibus
-        quibusdam commodi unde ipsum obcaecati laborum molestiae veritatis corrupti delectus, architecto non ut odit.
-        Facere, suscipit ex.</p>
-    </section>
-    <section class="section__education" style="border: 2px solid black">
-      <h2>Formacion Academica</h2>
-      <div class="section__education-targets">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class="section__aboutMe-box">
+        <figure>
+          <img src="../images/imgCV.png" alt="Fotografia de Emiliano" class="profile-pic">
+        </figure>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum exercitationem atque eius necessitatibus
+          quibusdam commodi unde ipsum obcaecati laborum molestiae veritatis corrupti delectus, architecto non ut odit.
+          Facere, suscipit ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum exercitationem atque eius
+          necessitatibus
+          quibusdam commodi unde ipsum obcaecati laborum molestiae veritatis corrupti delectus, architecto non ut odit.
+          Facere, suscipit ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum exercitationem atque eius
+          necessitatibus
+          quibusdam commodi unde ipsum obcaecati laborum molestiae veritatis corrupti delectus, architecto non ut odit.
+          Facere, suscipit ex.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum exercitationem atque eius
+          necessitatibus
+          quibusdam commodi unde ipsum obcaecati laborum molestiae veritatis corrupti delectus, architecto non ut odit.
+          Facere, suscipit ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum exercitationem atque eius
+          necessitatibus
+          quibusdam commodi unde ipsum obcaecati laborum molestiae veritatis corrupti delectus, architecto non ut odit.
+          Facere, suscipit ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum exercitationem atque eius
+          necessitatibus
+          quibusdam commodi unde ipsum obcaecati laborum molestiae veritatis corrupti delectus, architecto non ut odit.
+          Facere, suscipit ex.</p>
+
       </div>
     </section>
-    <section class="section__contact" style="border: 2px solid black">
+    <section class="section__education">
+      <h2>Formacion Academica</h2>
+      <div class="section__education-targets">
+        <div>
+          <figure><img src="../images/education/digitalHouse-logo.jpeg" alt="Logo de Digital House"></figure>
+          <span>Web Developer Fullstack</span>
+          <span>2023 - 2024</span>
+        </div>
+        <div>
+          <figure><img src="../images/education/aluraOracle-logo.jpg" alt="Logo de Alura Latam"></figure>
+          <span>Front-End con React y JS</span>
+          <span>2024</span>
+        </div>
+        <div>
+          <figure><img src="../images/education/logo-guayerd-edit.jpg" alt="Logo de Guayerd"></figure>
+          <span>Data Analytics</span>
+          <span>2024</span>
+        </div>
+      </div>
+    </section>
+    <section class="section__contact">
       <h2>Contacto</h2>
-      <div>
-        <figure style="border: 1px solid red; width: 100px; height: 100px; display: none;">
+      <p>¿Quieres contactarme? <br>
+        Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
+      <div class="section__contact-box">
+        <figure>
           <img src="../images/portfolio-mail.jpg" alt="Imagen de un telefono" style="width: 100%;height: 100%;">
         </figure>
-        <form action="" style="border: 1px solid red;">
-          <label></label>
+        <form action="">
+          <label>Nombre</label>
           <input type="text" placeholder="Nombre">
-          <label></label>
+          <label>Apellido</label>
           <input type="text" placeholder="Apellido">
-          <label></label>
-          <input type="text" placeholder="Asunto">
-          <label></label>
-          <textarea type="text" placeholder="Mensaje"></textarea>
-          <button type="submit"></button>
+          <label>E-mail</label>
+          <input type="text" placeholder="E-mail">
+          <label>Mensaje</label>
+          <textarea type="text" placeholder="Mensaje" maxlength="2000"></textarea>
+          <button type="submit">Enviar</button>
         </form>
       </div>
     </section>
@@ -100,10 +139,12 @@
     <h4>Emiliano G. Ferreyra</h4>
     <ul>
       <li>
-        <a href="https://github.com/emiferreyra89"><i class="fa-brands fa-github"></i>GitHub</a>
+        <a href="https://github.com/emiferreyra89" target="_blank" rel="noopener noreferrer"><i
+            class="fa-brands fa-github"></i>GitHub</a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/eg-ferreyra89/"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+        <a href="https://www.linkedin.com/in/eg-ferreyra89/" target="_blank" rel="noopener noreferrer"><i
+            class="fa-brands fa-linkedin"></i>Linkedin</a>
       </li>
     </ul>
   </footer>

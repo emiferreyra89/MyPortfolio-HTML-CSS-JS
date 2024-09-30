@@ -20,3 +20,9 @@ footer li a {
   display: flex;
   gap: 10px;
 }
+
+@media (min-width: 768px) {
+  footer {
+    gap: 20px;
+  }
+}
