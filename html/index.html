@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Emiliano Gabriel Ferreyra, showcasing web development projects with expertise in HTML, CSS, JavaScript, and Node.js. Explore my work, skills, and projects in full-stack development.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -32,9 +34,8 @@
       <h1>Bienvenidos a mi espacio tecnologico...</h1>
     </div>
   </header>
+
   <main>
-    <img src="../images/portfolio-background_header.jpg" alt="Banner red de triangulos y puntos interconectados"
-      class="main__banner">
     <section class="section__hobbies">
       <h2>Hobbies</h2>
       <div class="section__hobbies-targets">
@@ -68,7 +69,11 @@
       <h2>Sobre Mi...</h2>
       <div class="section__aboutMe-box">
         <figure>
-          <img src="../images/imgCV.png" alt="Fotografia de Emiliano" class="profile-pic">
+          <picture>
+            <source srcset="../images/imgCV.avif" type="imgCV/avif">
+            <source srcset="../images/imgCV.webp" type="imgCV/webp">
+            <img src="../images/imgCV.png" alt="Fotografia de Emiliano" class="profile-pic">
+          </picture>
         </figure>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum exercitationem atque eius necessitatibus
           quibusdam commodi unde ipsum obcaecati laborum molestiae veritatis corrupti delectus, architecto non ut odit.
@@ -88,24 +93,41 @@
           necessitatibus
           quibusdam commodi unde ipsum obcaecati laborum molestiae veritatis corrupti delectus, architecto non ut odit.
           Facere, suscipit ex.</p>
-
       </div>
     </section>
     <section class="section__education">
       <h2>Formacion Academica</h2>
       <div class="section__education-targets">
         <div>
-          <figure><img src="../images/education/digitalHouse-logo.jpeg" alt="Logo de Digital House"></figure>
+          <figure>
+            <picture>
+              <source srcset="../images/education/digitalHouse-logo.avif" type="digitalHouse-logo/avif">
+              <source srcset="../images/education/digitalHouse-logo.webp" type="digitalHouse-logo/webp">
+              <img src="../images/education/digitalHouse-logo.jpeg" alt="Logo de Digital House">
+            </picture>
+          </figure>
           <span>Web Developer Fullstack</span>
           <span>2023 - 2024</span>
         </div>
         <div>
-          <figure><img src="../images/education/aluraOracle-logo.jpg" alt="Logo de Alura Latam"></figure>
+          <figure>
+            <picture>
+              <source srcset="../images/education/aluraOracle-logo.avif" type="aluraOracle-logo/avif">
+              <source srcset="../images/education/aluraOracle-logo.webp" type="aluraOracle-logo/webp">
+              <img src="../images/education/aluraOracle-logo.jpg" alt="Logo de Alura Latam">
+            </picture>
+          </figure>
           <span>Front-End con React y JS</span>
           <span>2024</span>
         </div>
         <div>
-          <figure><img src="../images/education/logo-guayerd-edit.jpg" alt="Logo de Guayerd"></figure>
+          <figure>
+            <picture>
+              <source srcset="../images/education/logo-guayerd-edit.avif" type="logo-guayerd-edit/avif">
+              <source srcset="../images/education/logo-guayerd-edit.webp" type="logo-guayerd-edit/webp">
+              <img src="../images/education/logo-guayerd-edit.jpg" alt="Logo de Guayerd">
+            </picture>
+          </figure>
           <span>Data Analytics</span>
           <span>2024</span>
         </div>
@@ -117,7 +139,7 @@
         Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
       <div class="section__contact-box">
         <figure>
-          <img src="../images/portfolio-mail.jpg" alt="Imagen de un telefono" style="width: 100%;height: 100%;">
+          <img src="../images/mailTo-portfolio.webp" alt="Imagen de un correo electronico">
         </figure>
         <form action="">
           <label>Nombre</label>
